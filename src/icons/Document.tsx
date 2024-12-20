@@ -1,0 +1,19 @@
+import React from 'react'
+
+
+interface DocumentProps{
+  color:string
+}
+
+const Document:React.FC<DocumentProps> = ({color}) => {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill={color} xmlns="http://www.w3.org/2000/svg">
+    <g id="contract_FILL1_wght400_GRAD0_opsz24 1">
+    <path id="Vector" d="M4 14.6668C3.44444 14.6668 2.97222 14.4724 2.58333 14.0835C2.19444 13.6946 2 13.2224 2 12.6668V10.6668H4V1.3335H14V12.6668C14 13.2224 13.8056 13.6946 13.4167 14.0835C13.0278 14.4724 12.5556 14.6668 12 14.6668H4ZM12 13.3335C12.1889 13.3335 12.3472 13.2696 12.475 13.1418C12.6028 13.0141 12.6667 12.8557 12.6667 12.6668V2.66683H5.33333V10.6668H11.3333V12.6668C11.3333 12.8557 11.3972 13.0141 11.525 13.1418C11.6528 13.2696 11.8111 13.3335 12 13.3335ZM6 6.00016V4.66683H12V6.00016H6ZM6 8.00016V6.66683H12V8.00016H6Z" fill={color}/>
+    </g>
+    </svg>
+    
+  )
+}
+
+export default Document
