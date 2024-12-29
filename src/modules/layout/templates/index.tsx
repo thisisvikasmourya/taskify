@@ -16,17 +16,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (
         <QueryClientProvider client={queryClient}>
             <ReduxProvider>
-                <div style={{}}>
-                    <div >
-                        <Header />
-                    </div>
-                    <div style={{ display: "flex", flex: 1, marginLeft: "250px" }}>
-                        <Main>{children}</Main>
-                    </div>
-                    <div style={{  width: "250px"}}>
-                        <Sidebar />
-                    </div>
-                </div>
+                <Header />
+                <Main>{children}</Main>
+                <Sidebar />
             </ReduxProvider>
         </QueryClientProvider>
     );

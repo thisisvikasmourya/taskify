@@ -58,17 +58,17 @@ export default class AuthService extends Service {
     email,
     password,
     confpassword,
-    company,
-    domain,
+    phoneNumber,
+    termsAccepted,
   }: SignUp): Promise<any> {
     try {
-      const data = await this.post(`sign-up`, {
+      const data = await this.post(`register`, {
         name,
         email,
         password,
         confpassword,
-        company,
-        domain,
+        phoneNumber,
+        termsAccepted,
       });
       return data;
     } catch (error) {

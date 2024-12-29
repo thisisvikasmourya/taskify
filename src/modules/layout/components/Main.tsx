@@ -7,12 +7,7 @@ interface LayoutProps {
 
 const Main: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div
-      style={{
-        
-        // flexGrow: 1,
-        // overflow: "hidden"
-      }}
+    <div style={{marginLeft:"320px"}}
     >
       {children}
     </div>

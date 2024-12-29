@@ -6,8 +6,8 @@ export default interface SignUp {
   email: string,
   confpassword: string,
   password: string,
-  domain: string,
-  company: string,
+  termsAccepted: string,
+  phoneNumber: string,
 
   // Password of user.
 

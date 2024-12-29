@@ -3,7 +3,7 @@ import React from "react";
 
 const Login = () => {
   return (
-    <AuthTemplate page='identity' />
+    <AuthTemplate page={"identity"} />
   );
 };
 

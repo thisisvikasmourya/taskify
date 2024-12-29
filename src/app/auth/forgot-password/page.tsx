@@ -5,6 +5,7 @@ const Login = () => {
   return (
     <div>
       {/* <AuthTemplate page="forgot-password"/> */}
+      dgdgdfgdfgfd
     </div>
   )
 }
