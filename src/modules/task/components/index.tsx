@@ -1,10 +1,18 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
+import TaskForm from './create/TaskForm'
+import TaskListing from './create/TaskListing'
+import TaskTitle from './create/TaskTitle'
 
 const Task = () => {
+  const [isOpen, setIsOpen] = useState(false); // Modal open state
+
   return (
     <>
-    {/* <div className='text-center text-black text-[25px]'>Task Management</div> */}
-    
+    <TaskTitle setIsOpen={setIsOpen} />
+      <TaskListing />
+      <TaskForm isOpen={isOpen} setIsOpen={setIsOpen}/>
     </>
   )
 }

@@ -1,13 +1,10 @@
-import AuthTemplate from '@/modules/auth/templates'
-import React from 'react'
+import AuthTemplate from "@/modules/auth/templates";
+import React from "react";
 
 const Login = () => {
   return (
-<>
-      <AuthTemplate page="register"/>
-</>
+    <AuthTemplate page={"register"} />
+  );
+};
 
-  )
-}
-
-export default Login
+export default Login;

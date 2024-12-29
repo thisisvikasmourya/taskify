@@ -19,19 +19,6 @@ export default function RootLayout({
     <html lang="en">
       <AuthProvider>
         <body className={inter.className}>
-          <ToastContainer
-            position="bottom-left"
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="colored"
-          />
-
           {children}
         </body>
       </AuthProvider>

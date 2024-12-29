@@ -6,27 +6,28 @@ export default class RegisterService extends Service {
   }
 
   async create({
-    first_name,
-    token,
+    name,
+    email,
     password,
-    confirm_password,
-    last_name,
+    phoneNumber,
+    termsAccepted,
   }: {
-    first_name: string;
-    token: string;
+    name: string;
+    email: string;
     password: string;
-    confirm_password: string;
-    last_name: string;
+    phoneNumber: any;
+    termsAccepted: string;
   }): Promise<any> {
     try {
+      console.log(name,email,"form From Service")
       const data = await this.post(
         `register`,
         {
-          first_name,
-          token,
+          name,
+          email,
           password,
-          confirm_password,
-          last_name,
+          phoneNumber,
+          termsAccepted,
         },
         true,
       );
